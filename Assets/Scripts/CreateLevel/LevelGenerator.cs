@@ -30,9 +30,13 @@ public class LevelGenerator : MonoBehaviour
     private void Awake()
     {
         var go = GameObject.Find("MainMenu");
-        NoOfPlayers = go.GetComponent<MainMenu>().n1-1;
-        NoOfFollowers = go.GetComponent<MainMenu>().n2;
-        Destroy(go);
+        if (go != null)
+        {
+            NoOfPlayers = go.GetComponent<MainMenu>().n1 - 1;
+            NoOfFollowers = go.GetComponent<MainMenu>().n2;
+            Destroy(go);
+        }
+        
     }
     // Use this for initialization
     public void generateLevel()

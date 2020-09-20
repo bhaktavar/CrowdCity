@@ -267,6 +267,7 @@
     <Compile Include="Assets\Scripts\Game\FollowerScript.cs" />
     <Compile Include="Assets\Scripts\Game\MainMenu.cs" />
     <Compile Include="Assets\Scripts\Game\OpponentScript.cs" />
+    <Compile Include="Assets\Scripts\Game\Patrol.cs" />
     <Compile Include="Assets\Scripts\Game\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\Game\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Game\ScoreScript.cs" />

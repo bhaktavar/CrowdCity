@@ -593,6 +593,10 @@
       <Project>{7C87BE25-0A2E-FC58-1E14-37330F289AA3}</Project>
       <Name>Unity.Timeline.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="com.unity.multiplayer-hlapi.Editor.csproj">
+      <Project>{5FCD587C-B023-5664-12C3-B6D9F281A654}</Project>
+      <Name>com.unity.multiplayer-hlapi.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.VSCode.Editor.csproj">
       <Project>{F37EB8D3-595B-2A8E-9D57-98253E4F534B}</Project>
       <Name>Unity.VSCode.Editor</Name>
@@ -600,6 +604,10 @@
     <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
       <Project>{3A848AB7-9891-EDDA-D555-BF184C2F81F4}</Project>
       <Name>Unity.TextMeshPro.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponentsEditor.csproj">
+      <Project>{9A2A1A50-E65B-74A8-AF77-B45DF78A7632}</Project>
+      <Name>NavMeshComponentsEditor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Timeline.csproj">
       <Project>{6940CB9D-2F64-7CD4-BA0F-5610D5AB47B0}</Project>
@@ -609,17 +617,21 @@
       <Project>{C12CEEC6-100C-58A2-DE36-314E4DE5E40B}</Project>
       <Name>Unity.CollabProxy.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.Rider.Editor.csproj">
-      <Project>{C540080A-BED7-978E-DDFC-EE09E5DBB722}</Project>
-      <Name>Unity.Rider.Editor</Name>
+    <ProjectReference Include="com.unity.multiplayer-weaver.Editor.csproj">
+      <Project>{93D0DB2F-F53D-5A17-ACE7-5C0226DA2A0D}</Project>
+      <Name>com.unity.multiplayer-weaver.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.TextMeshPro.csproj">
-      <Project>{07A21C90-D344-AE1A-8456-9910C203B41A}</Project>
-      <Name>Unity.TextMeshPro</Name>
+    <ProjectReference Include="NavMeshComponents.csproj">
+      <Project>{39BB8A60-453F-EEAD-9859-5F71DB02F6D6}</Project>
+      <Name>NavMeshComponents</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.XR.LegacyInputHelpers.csproj">
       <Project>{8E7C73A3-7719-6FE2-0D0D-A83EDAB504C7}</Project>
       <Name>UnityEngine.XR.LegacyInputHelpers</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Rider.Editor.csproj">
+      <Project>{C540080A-BED7-978E-DDFC-EE09E5DBB722}</Project>
+      <Name>Unity.Rider.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.SpatialTracking.csproj">
       <Project>{779568FA-8B74-9FC0-8E1A-6EBB501CEFE6}</Project>
@@ -629,17 +641,13 @@
       <Project>{EDE48CFA-E9C6-66CB-F43E-070EAA2E76B0}</Project>
       <Name>UnityEngine.SpatialTracking</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.TextMeshPro.csproj">
+      <Project>{07A21C90-D344-AE1A-8456-9910C203B41A}</Project>
+      <Name>Unity.TextMeshPro</Name>
+    </ProjectReference>
     <ProjectReference Include="UnityEditor.XR.LegacyInputHelpers.csproj">
       <Project>{E39D021A-24A3-CC45-6B3B-9304A0479D9A}</Project>
       <Name>UnityEditor.XR.LegacyInputHelpers</Name>
-    </ProjectReference>
-    <ProjectReference Include="com.unity.multiplayer-hlapi.Editor.csproj">
-      <Project>{5FCD587C-B023-5664-12C3-B6D9F281A654}</Project>
-      <Name>com.unity.multiplayer-hlapi.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="com.unity.multiplayer-weaver.Editor.csproj">
-      <Project>{93D0DB2F-F53D-5A17-ACE7-5C0226DA2A0D}</Project>
-      <Name>com.unity.multiplayer-weaver.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="com.unity.multiplayer-hlapi.Runtime.csproj">
       <Project>{FA5CA632-7858-B348-2678-3563F1DAD317}</Project>
@@ -801,9 +809,6 @@
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\FeaturePointOrientationMode.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Frame.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\IAndroidPermissionsCheck.cs" />
-    <Compile Include="Assets\GoogleARCore\SDK\Scripts\InstantPlacementMode.cs" />
-    <Compile Include="Assets\GoogleARCore\SDK\Scripts\InstantPlacementPoint.cs" />
-    <Compile Include="Assets\GoogleARCore\SDK\Scripts\InstantPlacementPointTrackingMethod.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\LightEstimate.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\LightEstimateState.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\LightEstimationMode.cs" />
@@ -826,27 +831,43 @@
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\TrackableQueryFilter.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\TrackingState.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Utility\ARCoreProjectSettings.cs" />
-    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Utility\ARCoreiOSHelper.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Utility\ARDebug.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Utility\AndroidNativeHelper.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Utility\ConversionHelper.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Utility\DllImportNoop.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Utility\HelpAttribute.cs" />
-    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Utility\IARCoreiOSHelper.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Utility\IntPtrEqualityComparer.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Utility\MarshalingHelper.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Utility\OpenGL.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Utility\ShellHelper.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Utility\SuppressMemoryAllocationErrorAttribute.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Utility\ThrottledLogMessage.cs" />
-    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Utility\dependentModules\DependentModulesManager.cs" />
-    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Utility\dependentModules\IDependentModule.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\VersionInfo.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPAnchor.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPSession.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPTrackingState.cs" />
+    <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />
+    <Compile Include="Assets\Joystick Pack\Examples\JoystickSetterExample.cs" />
+    <Compile Include="Assets\Joystick Pack\Scripts\Base\Joystick.cs" />
+    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs" />
+    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
+    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
+    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
+    <Compile Include="Assets\Scripts\CreateLevel\CreateFloor.cs" />
+    <Compile Include="Assets\Scripts\CreateLevel\DrawOutline.cs" />
+    <Compile Include="Assets\Scripts\CreateLevel\LevelGenerator.cs" />
+    <Compile Include="Assets\Scripts\Game\DragController.cs" />
+    <Compile Include="Assets\Scripts\Game\FollowerScript.cs" />
+    <Compile Include="Assets\Scripts\Game\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\Game\OpponentScript.cs" />
+    <Compile Include="Assets\Scripts\Game\PauseMenu.cs" />
+    <Compile Include="Assets\Scripts\Game\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Game\ScoreScript.cs" />
+    <Compile Include="Assets\Scripts\Game\ThirdPersonCharacter.cs" />
+    <Compile Include="Assets\Scripts\Game\Timer.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Fonts\kr_toon_numbers\KR ReadMe.txt" />
     <None Include="Assets\GoogleARCore\Editor\ARCoreiOSDependencies.template" />
     <None Include="Assets\GoogleARCore\Examples\AugmentedFaces\Materials\Shaders\AugmentedFaceOccluder.shader" />
     <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\CameraColorRampShader.shader" />
@@ -859,6 +880,8 @@
     <None Include="Assets\GoogleARCore\Examples\ComputerVision\Materials\EdgeDetectionBackground.shader" />
     <None Include="Assets\GoogleARCore\SDK\Materials\ARBackground.shader" />
     <None Include="Assets\GoogleARCore\SDK\Materials\ARCoreDepth.cginc" />
+    <None Include="Assets\NavMeshComponents\Editor\NavMeshComponentsEditor.asmdef" />
+    <None Include="Assets\NavMeshComponents\Scripts\NavMeshComponents.asmdef" />
     <None Include="Assets\PlayServicesResolver\Editor\play-services-resolver_v1.2.122.0.txt" />
     <None Include="Packages\com.unity.collab-proxy\Editor\Resources\Styles\CollabHistoryCommon.uss" />
     <None Include="Packages\com.unity.collab-proxy\Editor\Resources\Styles\CollabHistoryDark.uss" />

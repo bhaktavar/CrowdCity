@@ -40,6 +40,7 @@ public class Timer : MonoBehaviour
     public void EndGame()
     {
         winnerUI.SetActive(true);
+        Time.timeScale = 0f;
         int maxValue = GO.scores.ToArray().Max();
         if (GO.scores.IndexOf(maxValue) == 0)
         {
@@ -52,6 +53,7 @@ public class Timer : MonoBehaviour
     }
     public void Replay()
     {
+        Time.timeScale = 1f;
         UnityEngine.SceneManagement.SceneManager.LoadScene("HelloAR");
     }
 }

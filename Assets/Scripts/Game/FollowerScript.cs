@@ -77,11 +77,11 @@ public class FollowerScript : MonoBehaviour
                 }
                 else if (coll.tag == "PlayerFollower")
                 {
-                    if (coll.gameObject.GetComponent<FollowerScript>().Captured == true)
+                    if (coll.gameObject.GetComponent<Patrol>().Captured == true)
                     {
                         Captured = true;
                         showHeart();
-                        master = coll.gameObject.GetComponent<FollowerScript>().master;
+                        master = coll.gameObject.GetComponent<Patrol>().master;
                         getCaptured(master);
                         break;
                     }
@@ -108,13 +108,13 @@ public class FollowerScript : MonoBehaviour
                 }
                 else if (coll.tag == "PlayerFollower")
                 {
-                    if (coll.gameObject.GetComponent<FollowerScript>().Captured == true)
+                    if (coll.gameObject.GetComponent<Patrol>().Captured == true)
                     {
                         showHeart();
                         master.GetComponent<ScoreScript>().PlayerScore--;
-                        if (master.GetComponent<ScoreScript>().PlayerScore < coll.gameObject.GetComponent<FollowerScript>().master.GetComponent<ScoreScript>().PlayerScore)
+                        if (master.GetComponent<ScoreScript>().PlayerScore < coll.gameObject.GetComponent<Patrol>().master.GetComponent<ScoreScript>().PlayerScore)
                         {
-                            master = coll.gameObject.GetComponent<FollowerScript>().master;
+                            master = coll.gameObject.GetComponent<Patrol>().master;
                             getCaptured(master);
                             break;
                         }

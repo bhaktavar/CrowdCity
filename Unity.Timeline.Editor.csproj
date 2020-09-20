@@ -254,6 +254,9 @@
     <Reference Include="Google.Protobuf">
       <HintPath>Assets/GoogleARCore/SDK/Plugins/Google.Protobuf.dll</HintPath>
     </Reference>
+    <Reference Include="Google.IOSResolver_v1.2.122.0">
+      <HintPath>Assets/PlayServicesResolver/Editor/Google.IOSResolver_v1.2.122.0.dll</HintPath>
+    </Reference>
     <Reference Include="Google.JarResolver_v1.2.122.0">
       <HintPath>Assets/PlayServicesResolver/Editor/Google.JarResolver_v1.2.122.0.dll</HintPath>
     </Reference>
@@ -262,9 +265,6 @@
     </Reference>
     <Reference Include="Google.VersionHandlerImpl_v1.2.122.0">
       <HintPath>Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.122.0.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.IOSResolver_v1.2.122.0">
-      <HintPath>Assets/PlayServicesResolver/Editor/Google.IOSResolver_v1.2.122.0.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>D:/unity outputs/fynd/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
@@ -872,6 +872,7 @@
     <Compile Include="Packages\com.unity.timeline\Editor\treeview\TrackPropertyCurvesDataSource.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Fonts\kr_toon_numbers\KR ReadMe.txt" />
     <None Include="Assets\GoogleARCore\Editor\ARCoreiOSDependencies.template" />
     <None Include="Assets\GoogleARCore\Examples\AugmentedFaces\Materials\Shaders\AugmentedFaceOccluder.shader" />
     <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\CameraColorRampShader.shader" />
@@ -884,6 +885,8 @@
     <None Include="Assets\GoogleARCore\Examples\ComputerVision\Materials\EdgeDetectionBackground.shader" />
     <None Include="Assets\GoogleARCore\SDK\Materials\ARBackground.shader" />
     <None Include="Assets\GoogleARCore\SDK\Materials\ARCoreDepth.cginc" />
+    <None Include="Assets\NavMeshComponents\Editor\NavMeshComponentsEditor.asmdef" />
+    <None Include="Assets\NavMeshComponents\Scripts\NavMeshComponents.asmdef" />
     <None Include="Assets\PlayServicesResolver\Editor\play-services-resolver_v1.2.122.0.txt" />
     <None Include="Packages\com.unity.collab-proxy\Editor\Resources\Styles\CollabHistoryCommon.uss" />
     <None Include="Packages\com.unity.collab-proxy\Editor\Resources\Styles\CollabHistoryDark.uss" />

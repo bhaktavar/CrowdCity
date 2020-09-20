@@ -1983,12 +1983,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3947549746473021275}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c521e0a0d77724f49b29aea208983221, type: 3}
+  m_Script: {fileID: 11500000, guid: 138c9ef72131afe4083e91d3df6f4000, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   points: []
   character: {fileID: 5807351142523397099}
-  captureRange: 4
+  captureRange: 0.2
   Captured: 0
   master: {fileID: 0}
 --- !u!114 &5807351142523397099
